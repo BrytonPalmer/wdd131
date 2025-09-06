@@ -1,4 +1,4 @@
-/* Google Font */
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #FFFFFF;   /* Darker shade on hover */
+  background-color: #FFFFFF;   
   color: white;
 }
 
@@ -44,7 +44,7 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   padding: 1rem;
-  background-color: #A3BFD9; /* Optional: keep or change */
+  background-color: #A3BFD9; 
   margin: 0;
   list-style: none;
 }
@@ -78,7 +78,7 @@ h1 {
 
 .section-wrapper {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Left card: 2/3, Right card: 1/3 */
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
 }
 
@@ -92,7 +92,7 @@ h1 {
 }
 
 .card h2 {
-  margin: -0.5rem -0.5rem 1rem -0.5rem; /* Pulls the h2 outward to match card edges */
+  margin: -0.5rem -0.5rem 1rem -0.5rem; 
   background-color: #A3BFD9;
   color: black;
   padding: 0.75rem 1rem;
@@ -112,7 +112,7 @@ h1 {
 .aboutme-content img {
   max-width: 200px;
   height: auto;
-  border-radius: 8px; /* Optional: adds a nice touch */
+  border-radius: 8px; 
 }
 
 .aboutme-content p {
@@ -149,7 +149,7 @@ h1 {
 
 .bottom-text hr {
   border: none;
-  border-top: 2px solid #A3BFD9; /* Matches your theme */
+  border-top: 2px solid #A3BFD9; 
   margin-bottom: 1rem;
 }
 
