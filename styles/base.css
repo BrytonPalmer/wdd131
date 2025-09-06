@@ -84,7 +84,7 @@ h1 {
 
 
 .card {
-  background-color: #DDC3A2;
+  background-color: #FFFFFF;
   padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -134,7 +134,7 @@ h1 {
 }
 
 .card a:hover {
-  color: #6D712E;
+  color: gray;
 }
 
 .bottom-text {
