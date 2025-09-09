@@ -30,3 +30,26 @@ article.append(paragraph, 'Hello World Addition!');
 paragraph.remove();
 article.removeChild(paragraph);
 article.remove();
+
+// click event: triggered when a user clicks on an element
+element.addEventListener('click', function() {
+    // code to be executed when the element is clicked
+});
+
+// keyup event: triggered when a user releases a key on the keyboard
+buttonElement.addEventListener('keyup', function() {
+    // code to be executed when a key is released
+});
+
+// DOMContentLoaded event: triggered when the initial HTML document has been completely loaded and parsed
+document.addEventListener('DOMContentLoaded', function() {
+    // code to be executed when the DOM is fully loaded/parsed
+});
+// mouseover event: triggered when a user moves the mouse pointer over an element
+element.addEventListener('mouseover', function() {
+    // code to be executed when the mouse pointer is over the element
+});
+// mouseout event: triggered when a user moves the mouse pointer out of an element
+element.addEventListener('mouseout', function() {
+    // code to be executed when the mouse pointer leaves the element
+});

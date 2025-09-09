@@ -1,11 +1,20 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('_____');
+const list = document.querySelector('ul'); // change to the actual selector, e.g. '#myList' or '.chapters'
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
-li.textContent = input.value;
-
-deleteButton.textContent = 'X';
-li.append(deleteButton);
-list.append(li);
+button.addEventListener('click', function() {
+  if (input.value.trim() !== '') {
+    const li = document.createElement('li');
+    const deleteButton = document.createElement('button');
+    li.textContent = input.value;
+    deleteButton.textContent = 'X';
+    li.append(deleteButton);
+    list.append(li);
+    input.value = '';
+    input.focus();
+  }
+});
+deleteButton.addEventListener('click', function() {
+  list.removeChild(li);
+  input.focus();
+});

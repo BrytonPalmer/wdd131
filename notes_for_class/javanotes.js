@@ -50,5 +50,3 @@ do {
 Array.forEach(function(element) {
     // code to be executed for each element in the array
 });
-
-
