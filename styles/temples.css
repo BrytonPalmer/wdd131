@@ -60,6 +60,10 @@ main {
   margin: 20px auto;
   padding: 0 20px;
 }
+main h1 {
+  text-align: center;
+  color: black;
+}
 
 .grid-container {
   display: grid;
