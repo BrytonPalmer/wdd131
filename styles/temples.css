@@ -1,4 +1,4 @@
-.roboto {
+/* .roboto {
   --roboto-wght: 400;
   --roboto-wdth: 100;
   font-family: "Roboto", sans-serif;
@@ -9,7 +9,7 @@
 }
 /* usage: <p class="roboto" style="--roboto-wght:700"> */
 
-header {
+/* header {
     background-color: royalblue;
     padding: 10px 0;
     text-align: center;
@@ -95,4 +95,127 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 20px;
+}
+
+#hamburgerBtn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #hamburgerBtn {
+    display: block;
+  }
+
+  #primaryNav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  #primaryNav.open ul {
+    display: flex;
+  }
+} */ 
+
+/* temples.css */
+
+/* Base typography and your Roboto setup */
+.roboto {
+  --roboto-wght: 400;
+  --roboto-wdth: 100;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--roboto-wght);
+  font-style: normal;
+  font-variation-settings: "wdth" var(--roboto-wdth),
+                          "wght" var(--roboto-wght);
+}
+
+/* Header */
+header {
+  background-color: royalblue;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#hamburgerBtn {
+  display: block;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#primaryNav {
+  display: none;
+  flex-direction: column;
+  background-color: royalblue;
+  width: 100%;
+  text-align: center;
+}
+
+#primaryNav.open {
+  display: flex;
+}
+
+#primaryNav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+#primaryNav a:hover {
+  text-decoration: underline;
+}
+
+/* Main and Grid */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: .5em;
+  font-size: .9em;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  background-color: royalblue;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
 }

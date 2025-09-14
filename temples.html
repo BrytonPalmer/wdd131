@@ -8,7 +8,7 @@
     <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
-    <script src="temples.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -16,14 +16,17 @@
 </head>
 <body>
     <header>
+        <div class="menu-wrapper">
+        <button id="hamburgerBtn" aria-label="Toggle Menu">&#9776;</button>
         <h1>Temple Album</h1>
-        <nav>
+        <nav id="primaryNav">
             <a href="index.html">Home</a>
             <a href="old.html">Old</a>
             <a href="new.html">New</a>
             <a href="large.html">Large</a>
             <a href="small.html">Small</a>
         </nav>
+        </div>
     </header>
     <main>
         <h1>Home</h1>
@@ -67,8 +70,11 @@
         </div>
     </main>
     <footer>
-        <p><span id="currentyear"></span>Bryton Palmer, UT</p>
-        <p>Last Updated: <span id="lastModified"></span></p>
+    <p>&copy; <span id="currentYear"></span> Bryton Palmer, UT</p>
+    <p>Date: <span id="currentDate"></span></p>
+    <p>Last Updated: <span id="lastModified"></span></p>
+
     </footer>
 </body>
 </html>
+

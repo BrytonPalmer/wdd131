@@ -1,0 +1,27 @@
+/* temples-large.css */
+
+@media (min-width: 801px) {
+  /* Hide mobile menu button */
+  #hamburgerBtn {
+    display: none;
+  }
+
+  /* Show nav horizontally */
+  #primaryNav {
+    display: flex !important;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    margin-left: auto;
+  }
+
+  #primaryNav a {
+    margin: 0 15px;
+    padding: 0;
+  }
+
+  /* Center header content */
+  .menu-wrapper {
+    justify-content: space-between;
+  }
+}
