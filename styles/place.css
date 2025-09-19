@@ -1,0 +1,51 @@
+:root {
+ --background-color: white;
+ --text-color: black;
+ --accent-color1: rgb(75, 129, 254);
+ --accent-color2: rgb(219, 116, 116);
+}
+
+.roboto {
+  --roboto-wght: 400;
+  --roboto-wdth: 100;
+  font-family: "Roboto", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: var(--roboto-wght);
+  font-style: normal;
+  font-variation-settings: "wdth" var(--roboto-wdth), "wght" var(--roboto-wght);
+}
+/* header css and components */
+header {
+    background-color: var(--accent-color1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* main css and componets */
+
+main {
+    max-width: 37.5em;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.image-container {
+    max-width: 37.5em;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* footer and components */
+footer {
+    background-color: var(--accent-color1);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
