@@ -5,15 +5,15 @@
  --accent-color2: rgb(219, 116, 116);
 }
 
-.roboto {
+/* .roboto {
   --roboto-wght: 400;
   --roboto-wdth: 100;
   font-family: "Roboto", sans-serif;
   /* font-optical-sizing: auto; */
-  font-weight: var(--roboto-wght);
+  /* font-weight: var(--roboto-wght);
   font-style: normal;
   font-variation-settings: "wdth" var(--roboto-wdth), "wght" var(--roboto-wght);
-}
+} */
 /* body */
 
 body {
@@ -34,7 +34,7 @@ header {
     justify-content: center;
     max-width: 37.5em;
     border: 5px; 
-    border-color: (75, 129, 254);
+    
 }
 
 /* main css and componets */
