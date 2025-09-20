@@ -133,6 +133,15 @@ header, footer {
   margin-bottom: 0.5rem;
 }
 
+.weather_icon::after {
+  content: "Updated hourly";
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
+
+
 /* Footer text */
 footer p {
   font-size: 0.9rem;
