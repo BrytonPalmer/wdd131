@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Bryton Palmer">
     <meta name="description" content="The united states of america">
-    <link rel="stylesheet" href="styles/place.css">
     <script defer src="scripts/place.js"></script>
     <title>The United States of America</title>
+    <link rel="stylesheet" href="styles/place.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -20,19 +20,20 @@
 
     <main>
         <div class="image-container">
-        <image src="images/statue_of_liberty_portrait.jpg" alt="Statue of Liberty"></image>
+        <picture>
+        <source srcset="images/statue_of_liberty_portrait.webp" media="(max-width: 600px)">
+        <source srcset="images/statue_of_liberty_landscape.webp" media="(max-width: 900px)">
+        <img src="images/statue_of_liberty_portrait.webp" alt="Statue of Liberty" loading="lazy">
+        </picture>
         </div>
-        <div>
+        <div class="data">
             <section>
                 <h2>Data</h2>
                 <ul>
-                    <li>Population: 331,893,745 (2023)</li>
                     <li>Area: 3,796,742 sq mi (9,833,520 km²)</li>
+                    <li>Population: 331,893,745 (2023)</li>
                     <li>Capital: Washington, D.C.</li>
-                    <li>President: Donald Trump</li>
-                    <li>Independence Day: July 4, 1776</li>
-                    <li>Largest City: New York City</li>
-                    <li>Official Language: None at federal level (English de facto)</li>
+                    <li>Language: English de facto</li>
                     <li>Currency: United States Dollar (USD)</li>
                     <li>Time Zones: 6 (UTC-5 to UTC-10)</li>
                     <li>Calling Code: +1</li>
@@ -40,12 +41,17 @@
                 </ul>
             </section>
         </div>
-        <div>
+        <div class="weather">
             <section>
                 <h2>Weather</h2>
+                <div class="weather_icon">
+                <img src="images/weather_icon.svg" alt="weather_icon">
+                </div>
                 <ul>
-                    <li>Temperature: <span id="currentWeather"></span></li>
-
+                    <li>Temperature: 71.8 ℉<span id="currentWeather"></span></li>
+                    <li>Conditions: Partly Cloudy</li>
+                    <li>Wind: 10.34 mph </li>
+                    <li>Wind Chill: <span id="windChill"></span></li>
                 </ul>
             </section>
         </div>
@@ -53,6 +59,7 @@
     <footer>
         <p>&copy; <span id="currentYear"></span> 🗽 Bryton Palmer 🗽</p>
         <p>The United States of America</p>
+        <br>
         <p>Last Updated: <span id="lastUpdated"></span></p>
     </footer>
 </body>
