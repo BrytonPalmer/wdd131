@@ -8,19 +8,20 @@
     <script defer src="scripts/place.js"></script>
     <title>The United States of America</title>
     <link rel="stylesheet" href="styles/place.css">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<!-- <body>
     <header>
         <h1>The United States of America</h1>
     </header>
 
     <main>
         <div class="image-container">
-        <picture>
+        <picture class="hero-image">
         <source srcset="images/statue_of_liberty_portrait.webp" media="(max-width: 600px)">
         <source srcset="images/statue_of_liberty_landscape.webp" media="(max-width: 900px)">
         <img src="images/statue_of_liberty_portrait.webp" alt="Statue of Liberty" fetchpriority="high">
@@ -62,5 +63,60 @@
         <br>
         <p>Last Updated: <span id="lastUpdated"></span></p>
     </footer>
+</body>
+</html> -->
+
+<body>
+  <header>
+    <h1>The United States of America</h1>
+  </header>
+
+  <main>
+    <div class="hero-container">
+      <picture class="hero-image">
+        <source srcset="images/statue_of_liberty_portrait.webp" media="(max-width: 600px)">
+        <source srcset="images/statue_of_liberty_landscape.webp" media="(max-width: 900px)">
+        <img src="images/statue_of_liberty_portrait.webp" alt="Statue of Liberty" fetchpriority="high">
+      </picture>
+
+      <div class="data overlay-box">
+        <section>
+          <h2>Data</h2>
+          <ul>
+            <li>Area: 3,796,742 sq mi (9,833,520 km²)</li>
+            <li>Population: 331,893,745 (2023)</li>
+            <li>Capital: Washington, D.C.</li>
+            <li>Language: English de facto</li>
+            <li>Currency: United States Dollar (USD)</li>
+            <li>Time Zones: 6 (UTC-5 to UTC-10)</li>
+            <li>Calling Code: +1</li>
+            <li>Internet TLD: .us, .gov, .mil</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="weather overlay-box">
+        <section>
+          <h2>Weather</h2>
+          <div class="weather_icon">
+            <img src="images/weather_icon.svg" alt="Weather icon">
+          </div>
+          <ul>
+            <li>Temperature: 71.8 ℉<span id="currentWeather"></span></li>
+            <li>Conditions: Partly Cloudy</li>
+            <li>Wind: 10.34 mph</li>
+            <li>Wind Chill: <span id="windChill"></span></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> 🗽 Bryton Palmer 🗽</p>
+    <p>The United States of America</p>
+    <br>
+    <p>Last Updated: <span id="lastUpdated"></span></p>
+  </footer>
 </body>
 </html>

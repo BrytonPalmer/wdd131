@@ -1,4 +1,4 @@
-:root {
+/* :root {
  --background-color: white;
  --text-color: black;
  --accent-color1: rgb(75, 129, 254);
@@ -16,17 +16,17 @@
 } */
 /* body */
 
-body {
+/* body {
   display: flex;
   flex-direction: column; /* Stack vertically */
-  align-items: center;     /* Center horizontally */
-  justify-content: flex-start; /* Align to top */
+  /* align-items: center;     Center horizontally
+  justify-content: flex-start; Align to top
   min-height: 100vh;
   margin: 0;
-}
+} */
 
 /* header css and components */
-header {
+/* header {
     background-color: var(--accent-color2);
     padding: 10px 20px;
     display: flex;
@@ -35,24 +35,24 @@ header {
     max-width: 37.5em;
     border: 5px; 
     
-}
+} */
 
 /* main css and componets */
 
-main {
+/* main {
     max-width: 37.5em;
     margin: 20px auto;
     padding: 0 20px;
     background-color: var(--background-color);
-}
+} */
 
-.image-container {
+/* .image-container {
     max-width: 37.5em;
     margin: 0 auto 20px auto;
     display: flex;
     justify-content: center;
 
-}
+} */
 
 
 /* .data, .weather {
@@ -84,7 +84,7 @@ main {
 } */
 
 /* Reset and base styles */
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -98,13 +98,95 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-}
+} */
 
 /* Layout container */
-main {
+/* main {
   width: 100%;
   max-width: 600px;
   padding: 1rem;
+} */
+
+/* Header and Footer */
+/* header, footer {
+  width: 100%;
+  background-color: #004c6d;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+} */
+
+/* Section styling */ 
+ .data, .weather {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* .weather_icon img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.weather_icon::after {
+  content: "Updated hourly";
+  display: block;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.3rem;
+} */
+
+
+/* Footer text */
+/* footer p {
+  font-size: 0.9rem;
+} */
+
+/* Responsive typography */
+/* h2 {
+  color: #004c6d;
+  margin-bottom: 0.5rem;
+} */
+
+/* @media screen and (min-width: 601px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .data, .weather {
+    margin: 0;
+  }
+} */
+
+:root {
+  --background-color: white;
+  --text-color: black;
+  --accent-color1: rgb(75, 129, 254);   /* Blue */
+  --accent-color2: rgb(219, 116, 116);  /* Red */
+}
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* Header and Footer */
@@ -116,17 +198,56 @@ header, footer {
   padding: 1rem 0;
 }
 
-/* Section styling */
-.data, .weather {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin: 1rem 0;
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+header {
+  background-color: var(--accent-color2);
 }
 
+footer p {
+  font-size: 0.9rem;
+}
+
+/* Main layout */
+main {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+/* Image container */
+.hero-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Info boxes */
+.overlay-box {
+  position: static;
+  background-color: var(--background-color);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+/* Weather icon and label */
 .weather_icon img {
   width: 60px;
   height: auto;
@@ -141,26 +262,32 @@ header, footer {
   margin-top: 0.3rem;
 }
 
-
-/* Footer text */
-footer p {
-  font-size: 0.9rem;
-}
-
-/* Responsive typography */
+/* Headings */
 h2 {
   color: #004c6d;
   margin-bottom: 0.5rem;
 }
 
+/* Responsive layout for larger screens */
 @media screen and (min-width: 601px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  .overlay-box {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.92);
+    z-index: 2;
+    width: 40%;
+    max-width: 300px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   }
 
-  .data, .weather {
-    margin: 0;
+  .data {
+    top: 10%;
+    left: 5%;
+  }
+
+  .weather {
+    bottom: 10%;
+    right: 5%;
   }
 }
+

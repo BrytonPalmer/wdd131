@@ -1,11 +1,21 @@
 @media screen and (min-width: 601px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+  .overlay-box {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 2;
+    width: 40%;
+    max-width: 300px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
 
-  .data, .weather {
-    margin: 0;
+  .data {
+    top: 10%;
+    left: 5%;
+  }
+
+  .weather {
+    bottom: 10%;
+    right: 5%;
   }
 }
