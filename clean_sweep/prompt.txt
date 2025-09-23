@@ -1,0 +1,11 @@
+I am choosing to go with a cleaning service website called Clean Sweep.
+
+I want the website to host a platform where customers can:
+   Gallery - see a gallery of before and after photos or videos
+   About Us - get to know the company and the employees working in their home
+   Pricing and Services - easily navigate through services: homes, rooms, move-outs/ins, garage, etc. with a quote calculator or genaric pricing
+    - tips and tricks sort of blog style page for anyone to share what works for them
+
+I wanted to create this website because I have a family member who wants to 
+start a business like this and I think this would be a good starting point to
+work off of if in the future I do make a website for them. 

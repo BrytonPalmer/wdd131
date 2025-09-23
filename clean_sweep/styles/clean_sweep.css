@@ -1,0 +1,63 @@
+:root {
+    --background-color: #add8ff;
+    --text-color: #000000;
+    --accent-color1: #fffef0;
+    --accent-color2: #9dcefb;
+    --link-color: #000000;
+    --visited-link: #6e6e6e;
+
+}
+
+/* font */
+.alan-sans {
+  --alan-weight: 400;
+  font-family: "Alan Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--alan-weight);
+  font-style: normal;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent-color2);
+}
+
+.logo_container img {
+  max-height: 130px;
+}
+
+.nav_menu_items ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_menu_items a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.nav_menu_items a:hover {
+    color: var(--visited-link);
+    text-decoration: underline;
+}
+
+
+/* main */
+
+main {
+    background-color: var(--accent-color1);
+}
+
+main h1 {
+    text-align: center;
+    background-color: var(--accent-color1);
+}
