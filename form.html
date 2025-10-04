@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Bryton Palmer">
+    <meta name="description" content="A simple form to collect user data about a Product">
+        <link rel="stylesheet" href="styles/form.css">
+        <script defer src="scripts/form.js"></script>
+    <title>Product Review</title>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <fieldset id="productName">
+                <legend>Product Name</legend>
+                <label for="productSelect" class="hidden">Select a Product</label>
+                <select id="productSelect" name="products" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
+            </fieldset>
+            <fieldset id="rating">
+                <legend>Overall Rating</legend>
+                    <label>
+                    <input type="radio" name="rating" value="5" required>
+                    &star;&star;&star;&star;&star;
+                    </label>
+                    <label>
+                    <input type="radio" name="rating" value="4">
+                    &star;&star;&star;&star;
+                    </label>
+                    <label>
+                    <input type="radio" name="rating" value="3">
+                    &star;&star;&star;
+                    </label>
+                    <label>
+                    <input type="radio" name="rating" value="2">
+                    &star;&star;
+                    </label>
+                    <label>
+                    <input type="radio" name="rating" value="1">
+                    &star;
+                    </label>
+            </fieldset>
+            <fieldset id="date">
+                <legend>Date of Installation</legend>
+                <label for="calendar" class="hidden">Select a date</label>
+                <input id="calendar" type="date" name="installation" required>
+            </fieldset>
+            <fieldset id="features">
+            <legend>Which features did you find useful in the product? (check all that apply)</legend>
+                <label>
+                    <input type="checkbox" name="Durability" value="Durability">
+                    Durability
+                </label>
+                <label>
+                    <input type="checkbox" name="Design" value="Design">
+                    Design
+                </label>
+                <label>
+                    <input type="checkbox" name="Performance" value="Performance">
+                    Performance
+                </label>
+                <label>
+                    <input type="checkbox" name="Ease of use" value="Ease of use">
+                    Ease of use
+                </label>
+            </fieldset>
+            <fieldset id="review">
+                <legend>Written Review (Optional)</legend>
+                <textarea id="reviewBox" name="written_review" rows="5" cols="33" placeholder="Please write your review here..."></textarea>
+            </fieldset>
+            <fieldset id="userField" class="userName">
+                <legend>Your Name (Optional)</legend>
+                <input class="userName" type="text" name="user_name" placeholder="Enter your name...">
+            </fieldset>
+            <div class="submit">
+            <button id="post_button" type="submit">Post Review</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bryton Palmer</p>
+        <script>
+            document.write("Last Modified: " + document.lastModified);
+        </script>
+    </footer>
+</body>
+</html>
