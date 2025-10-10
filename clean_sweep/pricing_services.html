@@ -16,15 +16,92 @@
 <body>
     <header>
         <div class="logo_container">
-        <img src="images/placeholder_img.webp" alt="Clean Sweep company logo">
+        <img src="images/clean_sweep_logo.webp" alt="Clean Sweep company logo">
         </div>
         <nav class="nav_menu_items">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="pricing_services.html">Pricing and Services</a></li>
-                <li><a href="diy_tips.html">DIY Tips</a></li>
+                <li><a href="pricing_services.html">Services</a></li>
+                <li><a href="diy_tips.html">Blog</a></li>
             </ul>
         </nav>
     </header>
+
+    <main id="services_main">
+        <section id="pricing_list" class="pricing">
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Basic Cleaning:</strong> $75 per visit</li>
+                <li><strong>Deep Cleaning:</strong> $100 per visit</li>
+                <li><strong>Move-In/Out Cleaning:</strong> $150 per visit</li>
+                <li><strong>Window Cleaning:</strong> $5 per window</li>
+                <li><strong>Garage Cleaning:</strong> $75 per visit</li>
+                <li><strong>Large Room:</strong> $50 per visit</li>
+                <li><strong>Small Room:</strong> $30 per visit</li>
+            </ul>
+        </section>
+
+        <section class="calculator">
+            <h2>Get a Quote</h2>
+            <form id="quoteForm">
+                <label for="serviceType">Service Type:</label>
+                <select id="serviceType" required>
+                <option value="">-- Select a Service --</option>
+                <option value="basic">Basic Cleaning</option>
+                <option value="deep">Deep Cleaning</option>
+                <option value="move">Move-In/Out Cleaning</option>
+                <option value="garage">Garage Cleaning</option>
+                <option value="largeRoom">Large Room Cleaning</option>
+                <option value="smallRoom">Small Room Cleaning</option>  
+                </select>
+
+                <label for="visits">Number of Visits:</label>
+                <input type="number" id="visits" min="1" placeholder="e.g. 1" />
+
+                <label for="windows">Windows to Clean:</label>
+                <input type="number" id="windows" min="0" placeholder="e.g. 5" />
+
+                <label for="garage">Garage Cleaning Visits:</label>
+                <input type="number" id="garage" min="0" placeholder="e.g. 1" />
+
+                <label for="largeRoom">Large Room Add-ons:</label>
+                <input type="number" id="largeRoom" min="0" placeholder="e.g. 1" />
+
+                <label for="smallRoom">Small Room Add-ons:</label>
+                <input type="number" id="smallRoom" min="0" placeholder="e.g. 1" />
+
+
+                <button type="submit">Get Your Price!</button>
+            </form>
+
+            <div id="quoteResult" aria-live="polite"></div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <nav class="nav_menu_items">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing_services.html">Services</a></li>
+                <li><a href="diy_tips.html">Blog</a></li>
+            </ul>
+        </nav>
+        <section>
+        <p>&copy; 2024 Clean Sweep. All rights reserved.</p>
+        <p>Designed by Bryton Palmer</p>
+        </section>
+        <div class="social_media_links">
+            <a href="facebook.com" aria-label="Facebook"><img src="images/facebook-icon.webp" alt="Facebook Icon"></a>
+            <a href="x.com" aria-label="Twitter"><img src="images/twitter_icon.webp" alt="Twitter Icon"></a>
+            <a href="instagram.com" aria-label="Instagram"><img src="images/instagram-icon.webp" alt="Instagram Icon"></a>
+        </div>
+    </footer>
+    <script src="clean_sweep.js"></script>
+
+</body>
+</html>
