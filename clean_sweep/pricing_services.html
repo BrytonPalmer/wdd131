@@ -28,59 +28,19 @@
             </ul>
         </nav>
     </header>
-
     <main id="services_main">
         <section id="pricing_list" class="pricing">
             <h2>Our Services</h2>
-            <ul>
-                <li><strong>Basic Cleaning:</strong> $75 per visit</li>
-                <li><strong>Deep Cleaning:</strong> $100 per visit</li>
-                <li><strong>Move-In/Out Cleaning:</strong> $150 per visit</li>
-                <li><strong>Window Cleaning:</strong> $5 per window</li>
-                <li><strong>Garage Cleaning:</strong> $75 per visit</li>
-                <li><strong>Large Room:</strong> $50 per visit</li>
-                <li><strong>Small Room:</strong> $30 per visit</li>
-            </ul>
+            <!-- Pricing list will be injected here by JavaScript -->
         </section>
 
         <section class="calculator">
             <h2>Get a Quote</h2>
-            <form id="quoteForm">
-                <label for="serviceType">Service Type:</label>
-                <select id="serviceType" required>
-                <option value="">-- Select a Service --</option>
-                <option value="basic">Basic Cleaning</option>
-                <option value="deep">Deep Cleaning</option>
-                <option value="move">Move-In/Out Cleaning</option>
-                <option value="garage">Garage Cleaning</option>
-                <option value="largeRoom">Large Room Cleaning</option>
-                <option value="smallRoom">Small Room Cleaning</option>  
-                </select>
-
-                <label for="visits">Number of Visits:</label>
-                <input type="number" id="visits" min="1" placeholder="e.g. 1" />
-
-                <label for="windows">Windows to Clean:</label>
-                <input type="number" id="windows" min="0" placeholder="e.g. 5" />
-
-                <label for="garage">Garage Cleaning Visits:</label>
-                <input type="number" id="garage" min="0" placeholder="e.g. 1" />
-
-                <label for="largeRoom">Large Room Add-ons:</label>
-                <input type="number" id="largeRoom" min="0" placeholder="e.g. 1" />
-
-                <label for="smallRoom">Small Room Add-ons:</label>
-                <input type="number" id="smallRoom" min="0" placeholder="e.g. 1" />
-
-
-                <button type="submit">Get Your Price!</button>
-            </form>
-
-            <div id="quoteResult" aria-live="polite"></div>
+            <!-- Quote form will be injected here by JavaScript -->
         </section>
-
     </main>
-    
+
+
     <footer>
         <nav class="nav_menu_items">
             <ul>
@@ -101,7 +61,7 @@
             <a href="instagram.com" aria-label="Instagram"><img src="images/instagram-icon.webp" alt="Instagram Icon"></a>
         </div>
     </footer>
-    <script src="clean_sweep.js"></script>
+    <script src="clean_sweep.js" defer></script>
 
 </body>
 </html>
